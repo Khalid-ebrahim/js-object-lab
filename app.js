@@ -19,18 +19,18 @@ const game = {
   ]
 }
 
-//console.dir(pokemon, { maxArrayLength: null })
-//console.log(game)
+console.dir(pokemon, { maxArrayLength: null })
+console.log(game)
 //Solve Exercise 3 here:
-//game.difficulty = ['easy', 'med', 'hard']
+game.difficulty = ['easy', 'med', 'hard']
 //Solve Exercise 4 here:
-//const starterPokemon = pokemon.find((poke) => poke.starter === true)
-//game.party.push(starterPokemon)
+const starterPokemon = pokemon.find((poke) => poke.starter === true)
+game.party.push(starterPokemon)
 //Solve Exercise 5 here:
-//const selectedPokemon = pokemon.filter(
-//(poke) => poke.HP > 40 || poke.type === 'fire'
-//)
+const selectedPokemon = pokemon.filter(
+(poke) => poke.HP > 40 || poke.type === 'fire'
+)
 
-//const newPokemon = selectedPokemon.slice(0, 3)
+const newPokemon = selectedPokemon.slice(0, 3)
 
-//game.party = game.party.concat(newPokemon)
+game.party = game.party.concat(newPokemon)
